@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "life-population.html",
+    "href": "life-population.html",
+    "title": "Life Expectancy and Population",
+    "section": "",
+    "text": "A higher population is coorelated with a slight, but not strong, association with a higher life expectancy.\n\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\n\ndf = pd.read_csv(\"gapminder.csv\")\n\n\nsns.lmplot(x='population_millions',y='life_expectancy',data=df, fit_reg=True)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Country Information",
+    "section": "",
+    "text": "The Gapminder dataset explains information about countries by year, such as GDP and life expectancy.\nLife Expectancy and Population\nLife Expectancy and GDP\nNetherlands Information"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "country.html",
+    "href": "country.html",
+    "title": "Country Analysis",
+    "section": "",
+    "text": "The Netherlands has had fairly linearly strong growth in all of population, GDP Per Capita, and Life Expectancy\n\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\n\ndf = pd.read_csv(\"gapminder.csv\")\n\nlines = df.loc[df['country'] == \"Netherlands\"].plot.line(x='year', y='population_millions')\nlines = df.loc[df['country'] == \"Netherlands\"].plot.line(x='year', y='gdp_per_capita')\nlines = df.loc[df['country'] == \"Netherlands\"].plot.line(x='year', y='life_expectancy')"
+  },
+  {
+    "objectID": "life-gdp.html",
+    "href": "life-gdp.html",
+    "title": "Life Expectancy and GDP",
+    "section": "",
+    "text": "Generally, a higher GDP Per Capita is coorelated with a higher life expectancy.\n\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\n\ndf = pd.read_csv(\"gapminder.csv\")\n\n\nsns.lmplot(x='gdp_per_capita',y='life_expectancy',data=df, fit_reg=True)"
+  }
+]
