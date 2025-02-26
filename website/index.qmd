@@ -1,0 +1,11 @@
+---
+title: "Country Information"
+---
+
+The Gapminder dataset explains information about countries by year, such as GDP and life expectancy.
+
+[Life Expectancy and Population](life-population.qmd)
+
+[Life Expectancy and GDP](life-gdp.qmd)
+
+[Netherlands Information](country.qmd)

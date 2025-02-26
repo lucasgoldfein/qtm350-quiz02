@@ -1,0 +1,16 @@
+---
+title: "Life Expectancy and Population"
+---
+
+A higher population is coorelated with a slight, but not strong, association with a higher life expectancy.
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sns
+
+df = pd.read_csv("gapminder.csv")
+
+
+sns.lmplot(x='population_millions',y='life_expectancy',data=df, fit_reg=True) 
+```
